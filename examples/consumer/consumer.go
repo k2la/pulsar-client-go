@@ -36,7 +36,6 @@ func main() {
 	consumer, err := client.Subscribe(pulsar.ConsumerOptions{
 		Topic:            "topic-1",
 		SubscriptionName: "my-sub",
-		Type:             pulsar.Shared,
 	})
 	if err != nil {
 		log.Fatal(err)
